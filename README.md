@@ -1,5 +1,6 @@
 <!-- ### Hi there 👋 -->
-<p align="center"><samp><b> Hey there! <img src="https://github.com/himanshusharma89/himanshusharma89/blob/master/Hi.gif" width="25px"> </b></samp></p>
+<p align="center"><samp><b> Hey there! <img src="https://github.com/himanshusharma89/himanshusharma89/blob/master/Hi.gif" width="25px"> </b><samp></p>
+<p align ="center"><h1 align="center">I Am Ankit Kumar</h1></p>
 
 <!--
 **Ankitkj1999/Ankitkj1999** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
