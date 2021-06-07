@@ -13,7 +13,7 @@ Here are some ideas to get you started:
 - 👯 I’m looking to collaborate on flutter projects.
 - 🤔 I’m looking for help with some of the intericate project ideas related to real world problems.
 - 💬 Ask me about new tech and flutter!
-- 📫 How to reach me at [ankitkumar.app](https:ankitkumar.app/).
+- 📫 How to reach me at [ankitkumar.app](https://www.ankitkumar.app/).
 - 📄 Read My Articles At [GeeksforGeeks](https://auth.geeksforgeeks.org/user/ankit_kumar_/articles).
 - 😄 Pronouns: He/His
 - ⚡  Fun fact: Still searching for the meaning of life!
