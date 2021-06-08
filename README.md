@@ -9,9 +9,9 @@
 
 Here are some ideas to get you started:
 
-- 🔭 I’m currently working on getting my self interview ready!
-- 🌱 I’m currently learning data structurest and algorithms along with flutter for development!
-- 👯 I’m looking to collaborate on flutter projects.
+- 🔭 Currently working on getting my self interview ready!
+- 🌱 I’m learning data structurest and algorithms along with flutter for development!
+- 👯 Looking to collaborate on flutter projects.
 - 🤔 I’m looking for help with some of the intericate project ideas related to real world problems.
 - 💬 Ask me about new tech and flutter!
 - 📫 Reach me at [ankitkumar.app](https://www.ankitkumar.app/).
