@@ -5,8 +5,8 @@
 <p align ="center"><h4 align="center"> Student At Lovely School Of Technonogy, A Flutter Developer, A Technical Writer </h4></p> 
 
 
-**Ankitkj1999/Ankitkj1999** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
-
+<!-- **Ankitkj1999/Ankitkj1999** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+ -->
 Here are some ideas to get you started:
 
 - 🔭 Currently working on getting my self interview ready!
