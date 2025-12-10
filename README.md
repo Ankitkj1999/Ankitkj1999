@@ -1,38 +1,56 @@
-<!-- ### Hi there 👋 -->
-<p align="center"><b> <img src="https://raw.githubusercontent.com/Ankitkj1999/Ankitkj1999/main/stuff/animated-git.gif"  width="35"/> </b></p>
-<p align="center"><b> Hey there! </b></p>
-<p align ="center"><h1 align="center">I Am Ankit Kumar</h1></p>
-<p align ="center"><h4 align="center"> Student At Lovely School Of Technonogy, A Flutter Developer, A Technical Writer </h4></p> 
+<h1 align="center">Hi, I'm Ankit Kumar 👋</h1>
 
+<p align="center">
+  <strong>Software Engineer | Full-Stack Developer | Technical Writer</strong><br>
+  Building scalable applications with React, Node.js, Flutter & AWS
+</p>
 
-<!-- **Ankitkj1999/Ankitkj1999** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
- -->
-
-# 💫 About Me:
-- 🔭 Currently working on getting my self interview ready!
-- 🌱 I’m learning data structurest and algorithms along with flutter for development!
-- 👯 Looking to collaborate on flutter projects.
-- 🤔 I’m looking for help with some of the intericate project ideas related to real world problems.
-- 💬 Ask me about new tech and flutter!
-- 📫 Reach me at [ankitkumar.app](https://www.ankitkumar.app/).
-- 📄 Read My Articles At [GeeksforGeeks](https://auth.geeksforgeeks.org/user/ankit_kumar_/articles).
-- 😄 Pronouns: He/His
-- ⚡  Fun fact: Still searching for the meaning of life!
-
-
-# 💻 Tech Stack:
-![Dart](https://img.shields.io/badge/dart-%230175C2.svg?style=for-the-badge&logo=dart&logoColor=white) ![Flutter](https://img.shields.io/badge/Flutter-%2302569B.svg?style=for-the-badge&logo=Flutter&logoColor=white)
-# 📊 GitHub Stats:
-![](https://github-readme-stats.vercel.app/api?username=ankitkj1999&theme=dark&hide_border=false&include_all_commits=true&count_private=true)<br/>
-![](https://github-readme-streak-stats.herokuapp.com/?user=ankitkj1999&theme=dark&hide_border=false)<br/>
-![](https://github-readme-stats.vercel.app/api/top-langs/?username=ankitkj1999&theme=dark&hide_border=false&include_all_commits=true&count_private=true&layout=compact)
-
-## 🏆 GitHub Trophies
-![](https://github-profile-trophy.vercel.app/?username=ankitkj1999&theme=radical&no-frame=false&no-bg=true&margin-w=4)
-
-
+<p align="center">
+  <a href="https://ankitkj1999.github.io/Ankitkj1999/Ankit_Kumar_Resume.pdf">Resume</a> •
+  <a href="https://www.geeksforgeeks.org/profile/ankit_kumar_?tab=articles">Articles (7M+ views)</a> •
+  <a href="https://ankitkj1999.hashnode.dev/">Blog</a> •
+  <a href="mailto:ankit.k.j1999@gmail.com">Email</a>
+</p>
 
 ---
-[![](https://visitcount.itsvg.in/api?id=ankitkj1999&icon=0&color=0)](https://visitcount.itsvg.in)
 
-<!-- Proudly created with GPRM ( https://gprm.itsvg.in ) -->
+### 🚀 About Me
+
+- 💼 Software Development Engineer at **Zalon** (Gurugram, India)
+- 🎯 3 years of experience in full-stack development
+- 🏆 Optimized backend systems reducing latency by 99.6% (18s → 63ms)
+- 📱 Built apps serving 25K+ users with 10K+ monthly active users
+- ✍️ Technical writer with **7M+ views** on GeeksforGeeks
+- ☁️ AWS Certified Cloud Practitioner
+
+### 💻 Tech Stack
+
+**Frontend:** React, Next.js, Angular, Flutter, TypeScript, Tailwind CSS  
+**Backend:** Node.js, Express, Python, Flask, FastAPI, REST APIs, GraphQL  
+**Database:** MongoDB, PostgreSQL, Redis, MySQL  
+**Cloud & DevOps:** AWS (EC2, S3, CloudFront), Docker, CI/CD, GitHub Actions  
+**Mobile:** Flutter, Firebase, GetX, Bloc
+
+### 📊 GitHub Stats
+
+<p align="center">
+  <img src="https://github-readme-stats.vercel.app/api?username=ankitkj1999&theme=dark&hide_border=true&include_all_commits=true&count_private=true" alt="GitHub Stats" height="165"/>
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=ankitkj1999&theme=dark&hide_border=true&layout=compact" alt="Top Languages" height="165"/>
+</p>
+
+<p align="center">
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=ankitkj1999&theme=dark&hide_border=true" alt="GitHub Streak"/>
+</p>
+
+### 🏆 Achievements
+
+- 🥇 AWS Certified Cloud Practitioner (2025-2028)
+- 📝 65+ technical articles on GeeksforGeeks
+- 🎯 7M+ views on technical content
+- 🚀 Zero downtime across 1,700+ production deployments
+
+---
+
+<p align="center">
+  <img src="https://komarev.com/ghpvc/?username=ankitkj1999&color=blueviolet&style=flat-square&label=Profile+Views" alt="Profile views"/>
+</p>
