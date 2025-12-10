@@ -34,8 +34,9 @@
 ### 📊 GitHub Stats
 
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=ankitkj1999&theme=dark&hide_border=true&include_all_commits=true&count_private=true" alt="GitHub Stats" height="165"/>
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=ankitkj1999&theme=dark&hide_border=true&layout=compact" alt="Top Languages" height="165"/>
+  <img src="https://img.shields.io/github/followers/ankitkj1999?label=Followers&style=flat-square&color=blue" alt="Followers"/>
+  <img src="https://img.shields.io/github/stars/ankitkj1999?label=Stars&style=flat-square&color=yellow" alt="Stars"/>
+  <img src="https://img.shields.io/github/public-repos/ankitkj1999?label=Public%20Repos&style=flat-square&color=green" alt="Public Repos"/>
 </p>
 
 <p align="center">
