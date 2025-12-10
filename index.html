@@ -3,7 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ankit Kumar - Software Engineer</title>
+    <title>Ankit Kumar - Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <style>
         * {
             margin: 0;
@@ -12,254 +15,518 @@
         }
         
         body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif;
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif;
             line-height: 1.6;
-            color: #000;
-            background: #fff;
-            max-width: 900px;
+            color: #0a0a0a;
+            background: #fafafa;
+            font-size: 15px;
+            -webkit-font-smoothing: antialiased;
+        }
+        
+        .container {
+            max-width: 1100px;
             margin: 0 auto;
-            padding: 40px 20px;
-            font-size: 14px;
+            padding: 80px 30px;
         }
         
-        header {
-            border-bottom: 1px solid #000;
-            padding-bottom: 20px;
-            margin-bottom: 30px;
+        /* Hero Section */
+        .hero {
+            min-height: 65vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            margin-bottom: 100px;
         }
         
-        h1 {
-            font-size: 24px;
-            font-weight: 600;
-            margin-bottom: 5px;
+        .hero h1 {
+            font-size: 56px;
+            font-weight: 700;
+            margin-bottom: 16px;
+            letter-spacing: -2px;
+            line-height: 1.1;
         }
         
-        .subtitle {
-            font-size: 13px;
-            color: #333;
-            margin-bottom: 15px;
+        .hero .tagline {
+            font-size: 20px;
+            color: #525252;
+            margin-bottom: 32px;
+            max-width: 600px;
+            font-weight: 500;
         }
         
-        .contact {
-            font-size: 12px;
+        .hero .bio {
+            font-size: 15px;
+            max-width: 680px;
+            margin-bottom: 40px;
+            line-height: 1.7;
+            color: #404040;
         }
         
-        .contact a {
-            color: #000;
+        .links {
+            display: flex;
+            gap: 12px;
+            flex-wrap: wrap;
+        }
+        
+        .links a {
+            color: #0a0a0a;
             text-decoration: none;
-            margin-right: 15px;
+            padding: 10px 20px;
+            border: 1.5px solid #e5e5e5;
+            font-size: 14px;
+            font-weight: 500;
+            border-radius: 8px;
+            transition: all 0.2s ease;
+            background: #fff;
         }
         
-        .contact a:hover {
-            text-decoration: underline;
+        .links a:hover {
+            background: #0a0a0a;
+            color: #fff;
+            border-color: #0a0a0a;
+            transform: translateY(-1px);
         }
         
-        section {
-            margin-bottom: 35px;
+        /* Section Headers */
+        .section {
+            margin-bottom: 100px;
         }
         
-        h2 {
-            font-size: 16px;
+        .section-title {
+            font-size: 32px;
+            font-weight: 700;
+            margin-bottom: 48px;
+            letter-spacing: -1px;
+        }
+        
+        /* Projects Grid */
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 24px;
+        }
+        
+        .project-card {
+            background: #fff;
+            border: 1.5px solid #e5e5e5;
+            padding: 32px;
+            border-radius: 12px;
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+        
+        .project-card:hover {
+            border-color: #0a0a0a;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+            transform: translateY(-2px);
+        }
+        
+        .project-name {
+            font-size: 18px;
             font-weight: 600;
-            margin-bottom: 15px;
+            margin-bottom: 12px;
+            letter-spacing: -0.3px;
+        }
+        
+        .project-desc {
+            font-size: 14px;
+            margin-bottom: 20px;
+            line-height: 1.6;
+            color: #525252;
+        }
+        
+        .project-tech {
+            font-size: 12px;
+            color: #737373;
+            margin-bottom: 20px;
+            font-weight: 500;
+        }
+        
+        .project-link {
+            font-size: 13px;
+            color: #0a0a0a;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 4px;
+            font-weight: 500;
+            border-bottom: 1.5px solid #0a0a0a;
+            padding-bottom: 2px;
+            transition: opacity 0.2s;
+        }
+        
+        .project-link:hover {
+            opacity: 0.6;
+        }
+        
+        /* Experience Timeline */
+        .experience-list {
+            display: flex;
+            flex-direction: column;
+            gap: 48px;
+        }
+        
+        .exp-item {
+            display: grid;
+            grid-template-columns: 220px 1fr;
+            gap: 48px;
+            padding: 32px;
+            background: #fff;
+            border: 1.5px solid #e5e5e5;
+            border-radius: 12px;
+            transition: all 0.2s ease;
+        }
+        
+        .exp-item:hover {
+            border-color: #d4d4d4;
+        }
+        
+        .exp-period {
+            font-size: 13px;
+            color: #737373;
+            font-weight: 500;
+            line-height: 1.6;
+        }
+        
+        .exp-content h3 {
+            font-size: 18px;
+            font-weight: 600;
+            margin-bottom: 6px;
+            letter-spacing: -0.3px;
+        }
+        
+        .exp-role {
+            font-size: 14px;
+            color: #737373;
+            margin-bottom: 16px;
+            font-weight: 500;
+        }
+        
+        .exp-desc {
+            font-size: 14px;
+            line-height: 1.7;
+            color: #525252;
+        }
+        
+        /* Skills Grid */
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 24px;
+        }
+        
+        .skill-category {
+            padding: 28px;
+            background: #fff;
+            border: 1.5px solid #e5e5e5;
+            border-radius: 12px;
+            transition: all 0.2s ease;
+        }
+        
+        .skill-category:hover {
+            border-color: #d4d4d4;
+        }
+        
+        .skill-category h3 {
+            font-size: 14px;
+            font-weight: 600;
+            margin-bottom: 12px;
             text-transform: uppercase;
             letter-spacing: 0.5px;
         }
         
-        h3 {
+        .skill-category p {
             font-size: 14px;
-            font-weight: 600;
-            margin-bottom: 5px;
+            line-height: 1.7;
+            color: #525252;
         }
         
-        .job-header {
-            display: flex;
-            justify-content: space-between;
-            align-items: baseline;
-            margin-bottom: 5px;
-        }
-        
-        .company {
-            font-weight: 600;
-        }
-        
-        .duration {
-            font-size: 12px;
-            color: #333;
-        }
-        
-        .job-title {
-            font-size: 13px;
-            color: #333;
-            margin-bottom: 8px;
-        }
-        
-        .tech-stack {
-            font-size: 12px;
-            color: #555;
-            margin-bottom: 10px;
-        }
-        
-        ul {
-            margin-left: 20px;
-            margin-bottom: 15px;
-        }
-        
-        li {
-            margin-bottom: 5px;
-            font-size: 13px;
-        }
-        
-        .skills {
+        /* Writings Section */
+        .writings-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 10px;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 24px;
         }
         
-        .skill-item {
-            font-size: 13px;
-        }
-        
-        .skill-label {
-            font-weight: 600;
-            display: inline-block;
-            min-width: 100px;
-        }
-        
-        .project-header {
-            margin-bottom: 8px;
-        }
-        
-        .project-name {
-            font-weight: 600;
-            font-size: 14px;
-        }
-        
-        .project-link {
-            font-size: 12px;
-            color: #000;
+        .writing-card {
+            background: #fff;
+            border: 1.5px solid #e5e5e5;
+            padding: 32px;
+            border-radius: 12px;
+            transition: all 0.3s ease;
             text-decoration: none;
+            color: inherit;
+            display: block;
         }
         
-        .project-link:hover {
+        .writing-card:hover {
+            border-color: #0a0a0a;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+            transform: translateY(-2px);
+        }
+        
+        .writing-platform {
+            font-size: 12px;
+            color: #737373;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-bottom: 12px;
+        }
+        
+        .writing-title {
+            font-size: 18px;
+            font-weight: 600;
+            margin-bottom: 10px;
+            letter-spacing: -0.3px;
+        }
+        
+        .writing-desc {
+            font-size: 14px;
+            line-height: 1.6;
+            color: #525252;
+            margin-bottom: 16px;
+        }
+        
+        .writing-stats {
+            font-size: 13px;
+            color: #737373;
+            font-weight: 500;
+        }
+        
+        /* Footer */
+        footer {
+            margin-top: 120px;
+            padding-top: 40px;
+            border-top: 1.5px solid #e5e5e5;
+            text-align: center;
+            font-size: 13px;
+            color: #737373;
+        }
+        
+        footer a {
+            color: #0a0a0a;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        
+        footer a:hover {
             text-decoration: underline;
         }
         
-        @media print {
-            body {
-                max-width: 100%;
-                padding: 20px;
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 40px;
+            }
+            
+            .hero .tagline {
+                font-size: 18px;
+            }
+            
+            .exp-item {
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }
+            
+            .projects-grid,
+            .writings-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .container {
+                padding: 50px 20px;
+            }
+            
+            .section {
+                margin-bottom: 70px;
             }
         }
     </style>
 </head>
 <body>
-    <header>
-        <h1>Ankit Kumar</h1>
-        <div class="subtitle">Software Engineer - Application Developer | 3 Years of Experience</div>
-        <div class="contact">
-            <a href="tel:+919667267972">+91-9667267972</a>
-            <a href="mailto:ankit.k.j1999@gmail.com">ankit.k.j1999@gmail.com</a>
-            <a href="https://linkedin.com/in/ankitkumar" target="_blank">LinkedIn</a>
-            <a href="https://github.com/ankitkumar" target="_blank">GitHub</a>
-            <span>Gurugram, Haryana, India</span>
-        </div>
-    </header>
+    <div class="container">
+        <!-- Hero Section -->
+        <section class="hero">
+            <h1>Ankit Kumar</h1>
+            <p class="tagline">Software Engineer building scalable applications and AI-powered platforms</p>
+            <p class="bio">
+                I'm a full-stack developer with 3 years of experience specializing in React, Node.js, Flutter, and cloud infrastructure. 
+                I've optimized backend systems reducing latency by 99.6%, deployed 1,700+ production updates with zero downtime, 
+                and built applications serving 25K+ users. Currently working at Zalon, architecting microservices and e-commerce platforms.
+            </p>
+            <div class="links">
+                <a href="mailto:ankit.k.j1999@gmail.com">Email</a>
+                <a href="https://linkedin.com/in/ankitkumar" target="_blank">LinkedIn</a>
+                <a href="https://github.com/ankitkumar" target="_blank">GitHub</a>
+                <a href="https://ankitkj1999.github.io/Ankitkj1999/Ankit_Kumar_Resume.pdf" target="_blank">Resume</a>
+            </div>
+        </section>
 
-    <section>
-        <h2>Experience</h2>
-        
-        <div style="margin-bottom: 25px;">
-            <div class="job-header">
-                <span class="company">Zalon</span>
-                <span class="duration">April 2024 – Present | Gurugram, India</span>
+        <!-- Projects Section -->
+        <section class="section">
+            <h2 class="section-title">Selected Work</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-name">GKSage - AI Course Platform</div>
+                    <p class="project-desc">
+                        Full-stack AI-powered learning platform that auto-generates courses with rich media, 
+                        interactive quizzes, and flashcards. Features secure authentication, payment integration, 
+                        and subscription management.
+                    </p>
+                    <div class="project-tech">React • Node.js • MongoDB • Docker • AWS • GenAI</div>
+                    <a href="https://gksage.com" class="project-link" target="_blank">Visit Site →</a>
+                </div>
+                
+                <div class="project-card">
+                    <div class="project-name">Zalon E-commerce Platform</div>
+                    <p class="project-desc">
+                        Next.js-based e-commerce platform with SSR, managing 14+ microservices. Optimized API 
+                        latency from 18s to 63ms and maintained zero downtime across 1,700+ deployments.
+                    </p>
+                    <div class="project-tech">Next.js • Node.js • AWS • RabbitMQ • Redis</div>
+                    <a href="https://zalon.in" class="project-link" target="_blank">Visit Site →</a>
+                </div>
+                
+                <div class="project-card">
+                    <div class="project-name">Student Tribe Platform</div>
+                    <p class="project-desc">
+                        Cross-platform mobile app offering internships, events, and networking for students. 
+                        Achieved 100K downloads with 12-minute average user engagement.
+                    </p>
+                    <div class="project-tech">Flutter • Firebase • GetX • REST API</div>
+                </div>
+                
+                <!-- Placeholder for new project -->
+                <div class="project-card" style="opacity: 0.4; pointer-events: none;">
+                    <div class="project-name">Your Next Project</div>
+                    <p class="project-desc">
+                        Add your new projects here by copying this card structure and updating the details.
+                    </p>
+                    <div class="project-tech">Tech Stack</div>
+                </div>
             </div>
-            <div class="job-title">Software Development Engineer</div>
-            <div class="tech-stack">Next.js | Flutter | Angular | Node.js | Express | AWS | Docker | MongoDB | Redis | RabbitMQ</div>
-            <ul>
-                <li>Developed and maintained e-commerce web application (Zalon.in) using Next.js for dynamic front-ends and SSR</li>
-                <li>Managed and scaled 14+ microservices written in Node.js/Express, optimizing APIs to reduce latency by 99.6% (18s to 63ms)</li>
-                <li>Architected and deployed production infrastructure using AWS (EC2, ECR, CloudFront, S3) with zero downtime across 1,700+ deployments</li>
-                <li>Engineered scalable microservices architecture with RabbitMQ, Redis caching, and JWT/OAuth authentication</li>
-                <li>Wrote 150+ Python scripts to automate infrastructure monitoring, WhatsApp notifications, and MongoDB reporting</li>
-                <li>Directed development of 4+ applications in Flutter and Angular, scaling to 25K+ downloads and 10K+ monthly active users</li>
-            </ul>
-        </div>
-        
-        <div style="margin-bottom: 25px;">
-            <div class="job-header">
-                <span class="company">Techtonic</span>
-                <span class="duration">September 2023 – April 2024 | Ghaziabad, India</span>
-            </div>
-            <div class="job-title">Junior Mobile Developer</div>
-            <div class="tech-stack">Flutter | Firebase | Bloc | REST API | Hive</div>
-            <ul>
-                <li>Led development of cross-platform invoice management app for SaaS platform trusted by MNCs like Kohler/Jaquar</li>
-                <li>Optimized modules to achieve 100% crash-free sessions and boost user retention by 21%</li>
-                <li>Improved user engagement by 30%, contributing to 4% monthly increase in billables and 70+ user acquisitions</li>
-            </ul>
-        </div>
-        
-        <div>
-            <div class="job-header">
-                <span class="company">Tekniko</span>
-                <span class="duration">June 2023 – September 2023 | Noida, India</span>
-            </div>
-            <div class="job-title">Software Development Intern</div>
-            <div class="tech-stack">Flutter | Firebase | GetX | REST API</div>
-            <ul>
-                <li>Rewrote and deployed student platform offering internships, events, and networking, achieving 100K downloads</li>
-                <li>Implemented real-time updates, article feeds, and group buy-in features with 12 min avg. user engagement</li>
-            </ul>
-        </div>
-    </section>
+        </section>
 
-    <section>
-        <h2>Projects</h2>
-        
-        <div style="margin-bottom: 20px;">
-            <div class="project-header">
-                <span class="project-name">AI-Course Platform</span> - 
-                <a href="https://gksage.com" class="project-link" target="_blank">gksage.com</a>
+        <!-- Writings Section -->
+        <section class="section">
+            <h2 class="section-title">Writings</h2>
+            <div class="writings-grid">
+                <a href="https://www.geeksforgeeks.org/profile/ankit_kumar_?tab=articles" class="writing-card" target="_blank">
+                    <div class="writing-platform">GeeksforGeeks</div>
+                    <div class="writing-title">Technical Articles & Tutorials</div>
+                    <p class="writing-desc">
+                        Writing in-depth technical articles on data structures, algorithms, web development, 
+                        and software engineering concepts.
+                    </p>
+                    <div class="writing-stats">65+ Articles • 7M+ Views</div>
+                </a>
+                
+                <a href="https://ankitkj1999.hashnode.dev/" class="writing-card" target="_blank">
+                    <div class="writing-platform">Hashnode</div>
+                    <div class="writing-title">Developer Blog</div>
+                    <p class="writing-desc">
+                        Sharing insights, experiences, and learnings from building scalable applications 
+                        and working with modern tech stacks.
+                    </p>
+                    <div class="writing-stats">View Blog →</div>
+                </a>
             </div>
-            <div class="tech-stack">React | Node.js | Express | MongoDB | Docker | AWS | Google GenAI SDK | Langchain</div>
-            <ul>
-                <li>Developed full-stack, AI-powered learning platform to auto-generate courses with rich media, interactive quizzes, and flashcards</li>
-                <li>Built scalable backend with Node.js, Express, and MongoDB, featuring secure REST API, JWT authentication, and social logins</li>
-                <li>Created dynamic, responsive frontend with React, TypeScript, Tailwind CSS, and Shadcn UI</li>
-                <li>Deployed using Docker and Docker Compose with automated CI/CD via GitHub Actions to AWS EC2</li>
-                <li>Integrated payment gateways (Razorpay, Flutterwave) and built subscription system</li>
-            </ul>
-        </div>
-    </section>
+        </section>
 
-    <section>
-        <h2>Technical Skills</h2>
-        <div class="skills">
-            <div class="skill-item"><span class="skill-label">Languages:</span> JavaScript, TypeScript, Python, Dart, SQL</div>
-            <div class="skill-item"><span class="skill-label">Frontend:</span> React, Next.js, Angular, Flutter, Tailwind CSS</div>
-            <div class="skill-item"><span class="skill-label">Backend:</span> Node.js, Express, Flask, FastAPI, REST APIs, GraphQL</div>
-            <div class="skill-item"><span class="skill-label">Database:</span> MongoDB, PostgreSQL, Redis, MySQL</div>
-            <div class="skill-item"><span class="skill-label">Cloud & DevOps:</span> AWS (EC2, S3, SNS, CloudFront), Docker, CI/CD, GitHub Actions</div>
-            <div class="skill-item"><span class="skill-label">Tools:</span> Git, Postman, Figma, Linux, Shell, VS Code</div>
-        </div>
-    </section>
-
-    <section>
-        <h2>Education & Certifications</h2>
-        <div style="margin-bottom: 10px;">
-            <div class="job-header">
-                <span class="company">B.Tech. Computer Science Engineering</span>
-                <span class="duration">2019 – 2023</span>
+        <!-- Experience Section -->
+        <section class="section">
+            <h2 class="section-title">Experience</h2>
+            <div class="experience-list">
+                <div class="exp-item">
+                    <div class="exp-period">
+                        April 2024 — Present<br>
+                        Gurugram, India
+                    </div>
+                    <div class="exp-content">
+                        <h3>Zalon</h3>
+                        <div class="exp-role">Software Development Engineer</div>
+                        <p class="exp-desc">
+                            Leading development of e-commerce web and mobile applications. Architected scalable microservices 
+                            infrastructure on AWS with zero downtime deployments. Optimized backend performance achieving 99.6% 
+                            latency reduction. Managing 14+ Node.js microservices and developed 4+ Flutter/Angular applications 
+                            reaching 25K+ downloads and 10K+ monthly active users.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="exp-item">
+                    <div class="exp-period">
+                        Sep 2023 — Apr 2024<br>
+                        Ghaziabad, India
+                    </div>
+                    <div class="exp-content">
+                        <h3>Techtonic</h3>
+                        <div class="exp-role">Junior Mobile Developer</div>
+                        <p class="exp-desc">
+                            Built cross-platform invoice management application using Flutter and Bloc for SaaS platform 
+                            trusted by major MNCs. Achieved 100% crash-free sessions and improved user retention by 21%, 
+                            contributing to significant growth in user acquisition and revenue.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="exp-item">
+                    <div class="exp-period">
+                        Jun 2023 — Sep 2023<br>
+                        Noida, India
+                    </div>
+                    <div class="exp-content">
+                        <h3>Tekniko</h3>
+                        <div class="exp-role">Software Development Intern</div>
+                        <p class="exp-desc">
+                            Developed and deployed student networking platform with real-time features, article feeds, 
+                            and event management. Successfully scaled to 100K downloads with strong user engagement metrics.
+                        </p>
+                    </div>
+                </div>
             </div>
-            <div style="font-size: 13px; color: #333;">Lovely Professional University, Punjab</div>
-        </div>
-        <div style="margin-top: 15px;">
-            <ul>
-                <li>AWS Certified Cloud Practitioner (Jan 2025 - Jan 2028)</li>
-                <li>7M+ views on 65+ technical articles on GeeksforGeeks</li>
-            </ul>
-        </div>
-    </section>
+        </section>
+
+        <!-- Skills Section -->
+        <section class="section">
+            <h2 class="section-title">Technical Expertise</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3>Frontend</h3>
+                    <p>React, Next.js, Angular, Flutter, TypeScript, Tailwind CSS, Responsive Design, SSR</p>
+                </div>
+                
+                <div class="skill-category">
+                    <h3>Backend</h3>
+                    <p>Node.js, Express, Python, Flask, FastAPI, REST APIs, GraphQL, Microservices, JWT/OAuth</p>
+                </div>
+                
+                <div class="skill-category">
+                    <h3>Database & Caching</h3>
+                    <p>MongoDB, PostgreSQL, Redis, MySQL, Data Modeling, Query Optimization</p>
+                </div>
+                
+                <div class="skill-category">
+                    <h3>Cloud & DevOps</h3>
+                    <p>AWS (EC2, S3, CloudFront, SNS), Docker, CI/CD, GitHub Actions, Infrastructure as Code</p>
+                </div>
+                
+                <div class="skill-category">
+                    <h3>Tools & Methods</h3>
+                    <p>Git, Agile, SDLC, Linux, Shell Scripting, Postman, Figma, VS Code</p>
+                </div>
+                
+                <div class="skill-category">
+                    <h3>Certifications</h3>
+                    <p>AWS Certified Cloud Practitioner • 7M+ views on GeeksforGeeks technical articles</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer>
+            <p>© 2024 Ankit Kumar • Gurugram, India • <a href="mailto:ankit.k.j1999@gmail.com">ankit.k.j1999@gmail.com</a></p>
+        </footer>
+    </div>
 </body>
 </html>
