@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ankit Kumar - Software Engineer</title>
+    <title>Ankit Kumar - Data Engineer</title>
     <style>
         * {
             margin: 0;
@@ -112,37 +112,19 @@
         
         .skills {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 10px;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 12px;
         }
         
         .skill-item {
             font-size: 13px;
+            line-height: 1.5;
         }
         
         .skill-label {
             font-weight: 600;
             display: inline-block;
-            min-width: 100px;
-        }
-        
-        .project-header {
-            margin-bottom: 8px;
-        }
-        
-        .project-name {
-            font-weight: 600;
-            font-size: 14px;
-        }
-        
-        .project-link {
-            font-size: 12px;
-            color: #000;
-            text-decoration: none;
-        }
-        
-        .project-link:hover {
-            text-decoration: underline;
+            min-width: 130px;
         }
         
         @media print {
@@ -156,12 +138,14 @@
 <body>
     <header>
         <h1>Ankit Kumar</h1>
-        <div class="subtitle">Software Engineer - Application Developer | 3 Years of Experience</div>
+        <div class="subtitle">Data Engineer | ETL Pipeline Builder | Cloud Data Architect</div>
         <div class="contact">
-            <a href="tel:+919667267972">+91-9667267972</a>
+            <a href="tel:+919667267972">+91 96672 67972</a>
             <a href="mailto:ankit.k.j1999@gmail.com">ankit.k.j1999@gmail.com</a>
-            <a href="https://linkedin.com/in/ankitkumar" target="_blank">LinkedIn</a>
-            <a href="https://github.com/ankitkumar" target="_blank">GitHub</a>
+            <a href="https://linkedin.com/in/ankitkj1999" target="_blank">LinkedIn</a>
+            <a href="https://github.com/ankitkj1999" target="_blank">GitHub</a>
+            <a href="https://ankitkj1999.github.io" target="_blank">Portfolio</a>
+            <a href="https://datapathsala.com/u/Ankit_Kumar_1999" target="_blank">DataPathSala</a>
             <span>Gurugram, Haryana, India</span>
         </div>
     </header>
@@ -171,18 +155,31 @@
         
         <div style="margin-bottom: 25px;">
             <div class="job-header">
-                <span class="company">Zalon</span>
-                <span class="duration">April 2024 – Present | Gurugram, India</span>
+                <span class="company">Lemon Tree Hotels</span>
+                <span class="duration">June 2026 – Present | Gurugram, India</span>
             </div>
-            <div class="job-title">Software Development Engineer</div>
-            <div class="tech-stack">Next.js | Flutter | Angular | Node.js | Express | AWS | Docker | MongoDB | Redis | RabbitMQ</div>
+            <div class="job-title">Data Engineer</div>
+            <div class="tech-stack">Python | PySpark | AWS (Glue, Lambda, S3, Redshift) | Terraform | GitHub Actions | Tableau Bridge</div>
             <ul>
-                <li>Developed and maintained e-commerce web application (Zalon.in) using Next.js for dynamic front-ends and SSR</li>
-                <li>Managed and scaled 14+ microservices written in Node.js/Express, optimizing APIs to reduce latency by 99.6% (18s to 63ms)</li>
-                <li>Architected and deployed production infrastructure using AWS (EC2, ECR, CloudFront, S3) with zero downtime across 1,700+ deployments</li>
-                <li>Engineered scalable microservices architecture with RabbitMQ, Redis caching, and JWT/OAuth authentication</li>
-                <li>Wrote 150+ Python scripts to automate infrastructure monitoring, WhatsApp notifications, and MongoDB reporting</li>
-                <li>Directed development of 4+ applications in Flutter and Angular, scaling to 25K+ downloads and 10K+ monthly active users</li>
+                <li>Implemented Terraform + GitHub Actions CI/CD for AWS Lambda deployments, standardizing source control, infrastructure provisioning, and repeatable releases through an organized Git repository.</li>
+                <li>Migrated approximately 65 AWS Glue jobs from ad-hoc AWS configurations into a systematic, pipeline-oriented Git repository; developed 300+ unit and integration tests to improve deployment confidence and maintainability.</li>
+                <li>Rewrote the customer deduplication pipeline, removing unnecessary processing and legacy logic; migrated the graph-based implementation to PySpark and implemented Breadth-First Search (BFS) for scalable traversal.</li>
+                <li>Resolved intermittent Tableau data-source refresh failures caused by CPU contention around Tableau Bridge and a Redshift warehouse in a private VPC; changed concurrent refreshes to controlled sequential execution, improving reliability.</li>
+            </ul>
+        </div>
+        
+        <div style="margin-bottom: 25px;">
+            <div class="job-header">
+                <span class="company">Zalon</span>
+                <span class="duration">April 2024 – June 2026 | Gurugram, India</span>
+            </div>
+            <div class="job-title">Data Engineer</div>
+            <div class="tech-stack">Python | PySpark | AWS (Kinesis, Lambda, S3, Glue, Redshift) | PostgreSQL | MongoDB | Docker</div>
+            <ul>
+                <li>Designed and implemented a real-time data ingestion architecture using AWS Kinesis, Lambda, and S3 to capture and process 5M+ application events daily, enabling reliable downstream feature and analytics workloads.</li>
+                <li>Built and optimized 10+ AWS Glue/PySpark and Python ETL pipelines for processing 500K+ SKUs, implementing schema validation, deduplication, and standardization while migrating legacy MongoDB data into Redshift/PostgreSQL.</li>
+                <li>Implemented automated data quality, schema-drift, deduplication, and normalization frameworks across ingestion pipelines, improving downstream BI accuracy and reducing stale-data incidents.</li>
+                <li>Spearheaded AWS cloud cost optimization across data workflows by right-sizing Glue DPU allocations and automating S3 lifecycle policies, cutting monthly data infrastructure spend by 28%.</li>
             </ul>
         </div>
         
@@ -191,12 +188,11 @@
                 <span class="company">Techtonic</span>
                 <span class="duration">September 2023 – April 2024 | Ghaziabad, India</span>
             </div>
-            <div class="job-title">Junior Mobile Developer</div>
-            <div class="tech-stack">Flutter | Firebase | Bloc | REST API | Hive</div>
+            <div class="job-title">Data Engineer</div>
+            <div class="tech-stack">Python | PostgreSQL | AWS S3 | Firebase Analytics | SQL</div>
             <ul>
-                <li>Led development of cross-platform invoice management app for SaaS platform trusted by MNCs like Kohler/Jaquar</li>
-                <li>Optimized modules to achieve 100% crash-free sessions and boost user retention by 21%</li>
-                <li>Improved user engagement by 30%, contributing to 4% monthly increase in billables and 70+ user acquisitions</li>
+                <li>Built Python-based REST API ingestion pipelines into PostgreSQL, processing 50K+ records daily with validation, deduplication, and SQL reporting views for an enterprise SaaS platform.</li>
+                <li>Leveraged Firebase Analytics event data to identify user drop-offs, contributing to a 21% improvement in retention; archived processed exports to AWS S3 for audit compliance and versioned backup.</li>
             </ul>
         </div>
         
@@ -205,30 +201,10 @@
                 <span class="company">Tekniko</span>
                 <span class="duration">June 2023 – September 2023 | Noida, India</span>
             </div>
-            <div class="job-title">Software Development Intern</div>
-            <div class="tech-stack">Flutter | Firebase | GetX | REST API</div>
+            <div class="job-title">Data Engineering Intern</div>
+            <div class="tech-stack">Python | Pandas | PostgreSQL | Data Cleaning</div>
             <ul>
-                <li>Rewrote and deployed student platform offering internships, events, and networking, achieving 100K downloads</li>
-                <li>Implemented real-time updates, article feeds, and group buy-in features with 12 min avg. user engagement</li>
-            </ul>
-        </div>
-    </section>
-
-    <section>
-        <h2>Projects</h2>
-        
-        <div style="margin-bottom: 20px;">
-            <div class="project-header">
-                <span class="project-name">AI-Course Platform</span> - 
-                <a href="https://gksage.com" class="project-link" target="_blank">gksage.com</a>
-            </div>
-            <div class="tech-stack">React | Node.js | Express | MongoDB | Docker | AWS | Google GenAI SDK | Langchain</div>
-            <ul>
-                <li>Developed full-stack, AI-powered learning platform to auto-generate courses with rich media, interactive quizzes, and flashcards</li>
-                <li>Built scalable backend with Node.js, Express, and MongoDB, featuring secure REST API, JWT authentication, and social logins</li>
-                <li>Created dynamic, responsive frontend with React, TypeScript, Tailwind CSS, and Shadcn UI</li>
-                <li>Deployed using Docker and Docker Compose with automated CI/CD via GitHub Actions to AWS EC2</li>
-                <li>Integrated payment gateways (Razorpay, Flutterwave) and built subscription system</li>
+                <li>Built Python and Pandas pipelines to clean, deduplicate, and schema-normalize 100K+ records of raw activity data, automating PostgreSQL loading and eliminating 10+ hours/week of manual reporting effort.</li>
             </ul>
         </div>
     </section>
@@ -236,12 +212,13 @@
     <section>
         <h2>Technical Skills</h2>
         <div class="skills">
-            <div class="skill-item"><span class="skill-label">Languages:</span> JavaScript, TypeScript, Python, Dart, SQL</div>
-            <div class="skill-item"><span class="skill-label">Frontend:</span> React, Next.js, Angular, Flutter, Tailwind CSS</div>
-            <div class="skill-item"><span class="skill-label">Backend:</span> Node.js, Express, Flask, FastAPI, REST APIs, GraphQL</div>
-            <div class="skill-item"><span class="skill-label">Database:</span> MongoDB, PostgreSQL, Redis, MySQL</div>
-            <div class="skill-item"><span class="skill-label">Cloud & DevOps:</span> AWS (EC2, S3, SNS, CloudFront), Docker, CI/CD, GitHub Actions</div>
-            <div class="skill-item"><span class="skill-label">Tools:</span> Git, Postman, Figma, Linux, Shell, VS Code</div>
+            <div class="skill-item"><span class="skill-label">Languages:</span> Python, SQL, Scala, Bash</div>
+            <div class="skill-item"><span class="skill-label">Big Data & Processing:</span> PySpark, Apache Spark, Spark SQL, Databricks, Pandas, GraphX</div>
+            <div class="skill-item"><span class="skill-label">Cloud (AWS, GCP, Azure):</span> AWS (S3, Redshift, Glue, Athena, Lambda, EC2), GCP (BigQuery, GCS, Cloud Composer, Pub/Sub, Looker Studio), Azure (ADF, Synapse, ADLS Gen2), Snowflake</div>
+            <div class="skill-item"><span class="skill-label">Streaming & Messaging:</span> AWS Kinesis, GCP Pub/Sub, RabbitMQ, Elasticsearch / OpenSearch</div>
+            <div class="skill-item"><span class="skill-label">Databases & Warehouses:</span> Snowflake, Amazon Redshift, Google BigQuery, Azure Synapse, PostgreSQL, MongoDB, Redis, MySQL</div>
+            <div class="skill-item"><span class="skill-label">Orchestration & CI/CD:</span> Apache Airflow, Cloud Composer, GitHub Actions, Terraform</div>
+            <div class="skill-item"><span class="skill-label">DevOps & Backend:</span> Docker, Linux, Node.js, Express, FastAPI</div>
         </div>
     </section>
 
@@ -249,15 +226,16 @@
         <h2>Education & Certifications</h2>
         <div style="margin-bottom: 10px;">
             <div class="job-header">
-                <span class="company">B.Tech. Computer Science Engineering</span>
+                <span class="company">B.Tech. Computer Science & Engineering</span>
                 <span class="duration">2019 – 2023</span>
             </div>
-            <div style="font-size: 13px; color: #333;">Lovely Professional University, Punjab</div>
+            <div style="font-size: 13px; color: #333;">Lovely Professional University, Punjab, India</div>
         </div>
         <div style="margin-top: 15px;">
             <ul>
                 <li>AWS Certified Cloud Practitioner (Jan 2025 - Jan 2028)</li>
-                <li>7M+ views on 65+ technical articles on GeeksforGeeks</li>
+                <li>Rank #4 (Grandmaster) on DataPathSala (Data Engineering platform)</li>
+                <li>Published 65+ technical articles on GeeksforGeeks, accumulating 7M+ total views</li>
             </ul>
         </div>
     </section>
